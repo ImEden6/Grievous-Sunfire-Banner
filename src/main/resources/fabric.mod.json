@@ -1,0 +1,31 @@
+{
+	"schemaVersion": 1,
+	"id": "grievous_sunfire",
+	"version": "${version}",
+	"name": "Grievous Sunfire Addon",
+	"description": "Applies Grievous Wounds to Sunfire Standard from Simply Swords.",
+	"authors": [
+		"Mervyn"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/grievous_sunfire/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": []
+	},
+	"mixins": [
+		"grievous_sunfire.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=${loader_version}",
+		"minecraft": "~${minecraft_version}",
+		"java": ">=17",
+		"fabric-api": "*",
+		"simplyswords": "*",
+		"zenith_attributes": "*"
+	}
+}
